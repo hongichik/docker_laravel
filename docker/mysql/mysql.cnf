@@ -1,0 +1,25 @@
+[mysqld]
+# Cấu hình kết nối
+port=3306
+bind-address=0.0.0.0
+max_connections=100
+
+# Cấu hình bộ nhớ đệm
+key_buffer_size=256M
+sort_buffer_size=2M
+read_buffer_size=2M
+join_buffer_size=8M
+innodb_buffer_pool_size=1G
+
+# Cấu hình thời gian timeout
+wait_timeout=1800
+interactive_timeout=1800
+
+# Cấu hình log
+log-error=/var/log/mysql/error.log
+slow_query_log=1
+long_query_time=2
+slow_query_log_file=/var/log/mysql/slow.log
+
+# Cấu hình bảo mật
+skip-name-resolve
