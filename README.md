@@ -88,4 +88,4 @@
 >php artisan serve --host=0.0.0.0 --port=8000
 
 ### ubuntu xóa thư mục
-$rm -r (đường dẫn file)
+>rm -r (đường dẫn file)
