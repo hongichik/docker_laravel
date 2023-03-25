@@ -25,7 +25,7 @@ RUN docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath zip \
 
 COPY php.ini /usr/local/etc/php/
 
-WORKDIR /var/www/html
+WORKDIR /var/www/html/BE
 
 
 CMD ["php-fpm"]
