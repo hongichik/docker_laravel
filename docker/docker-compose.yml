@@ -84,13 +84,13 @@ services:
     volumes:
       - ../backend:/var/www/html/BE
       - ../fontend:/var/www/html/FE
-      - ../docker/BE_nginx/cert.pem:/var/www/html/BE/nginx/certs/cert.pem
-      - ../docker/BE_nginx/key.pem:/var/www/html/BE/nginx/certs/key.pem
-      - ../docker/BE_nginx/env.conf:/var/www/html/BE/nginx/env.conf
-      - ../docker/FE_nginx/cert.pem:/var/www/html/FE/nginx/certs/cert.pem
-      - ../docker/FE_nginx/key.pem:/var/www/html/FE/nginx/certs/key.pem
-      - ../docker/FE_nginx/env.conf:/var/www/html/FE/nginx/env.conf
-      - ../docker/nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ../docker/BE_nginx/cert.pem:/var/BE/nginx/certs/cert.pem
+      - ../docker/BE_nginx/key.pem:/var/BE/nginx/certs/key.pem
+      - ../docker/BE_nginx/env.conf:/var/BE/nginx/env.conf
+      - ../docker/FE_nginx/cert.pem:/var/FE/nginx/certs/cert.pem
+      - ../docker/FE_nginx/key.pem:/var/FE/nginx/certs/key.pem
+      - ../docker/FE_nginx/env.conf:/var/FE/nginx/env.conf
+      - ../docker/nginx/nginx.conf:/etc/nginx/conf.d/default.conf
       - ../docker/nginx/log:/var/log/nginx
     depends_on:
       - php

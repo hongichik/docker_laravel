@@ -2,3 +2,136 @@
 2023/03/25 05:23:30 [error] 22#22: *2 rewrite or internal redirection cycle while internally redirecting to "/index.html", client: 172.19.0.1, server: fe_domain.com, request: "GET /favicon.ico HTTP/1.1", host: "be_domain.com", referrer: "http://be_domain.com/"
 2023/03/25 05:23:39 [error] 22#22: *3 rewrite or internal redirection cycle while internally redirecting to "/index.html", client: 172.19.0.1, server: fe_domain.com, request: "GET / HTTP/1.1", host: "fe_domain.com"
 2023/03/25 05:23:39 [error] 22#22: *4 rewrite or internal redirection cycle while internally redirecting to "/index.html", client: 172.19.0.1, server: fe_domain.com, request: "GET /favicon.ico HTTP/1.1", host: "fe_domain.com", referrer: "http://fe_domain.com/"
+2023/03/25 18:50:35 [error] 30#30: *26 rewrite or internal redirection cycle while internally redirecting to "/index.html", client: 172.19.0.1, server: fe_domain.com, request: "GET / HTTP/1.1", host: "fe_domain.com"
+2023/03/25 19:09:51 [error] 30#30: *93 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.19.0.1, server: be_domain.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.19.0.7:9000", host: "be_domain.com"
+2023/03/25 19:10:17 [error] 30#30: *93 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.19.0.1, server: be_domain.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.19.0.7:9000", host: "be_domain.com"
+2023/03/25 19:11:03 [error] 30#30: *93 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.19.0.1, server: be_domain.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.19.0.7:9000", host: "be_domain.com"
+2023/03/25 19:11:06 [error] 30#30: *93 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.19.0.1, server: be_domain.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.19.0.7:9000", host: "be_domain.com"
+2023/03/25 19:13:07 [error] 30#30: *103 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.19.0.1, server: be_domain.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.19.0.7:9000", host: "be_domain.com"
+2023/03/25 19:16:40 [error] 30#30: *107 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.19.0.1, server: be_domain.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.19.0.7:9000", host: "be_domain.com"
+2023/03/25 20:08:26 [error] 22#22: *14 rewrite or internal redirection cycle while internally redirecting to "/index.html", client: 172.19.0.1, server: fe_domain.com, request: "GET /favicon.ico HTTP/1.1", host: "fe_domain.com", referrer: "http://fe_domain.com/demo/"
+2023/03/25 20:08:28 [error] 22#22: *11 directory index of "/var/www/html/FE/build/" is forbidden, client: 172.19.0.1, server: fe_domain.com, request: "GET / HTTP/1.1", host: "fe_domain.com"
+2023/03/25 20:08:28 [error] 22#22: *11 rewrite or internal redirection cycle while internally redirecting to "/index.html", client: 172.19.0.1, server: fe_domain.com, request: "GET /favicon.ico HTTP/1.1", host: "fe_domain.com", referrer: "http://fe_domain.com/"
+2023/03/25 22:48:18 [emerg] 1#1: "events" directive is not allowed here in /etc/nginx/conf.d/default.conf:1
+2023/03/25 22:49:51 [notice] 1#1: using the "epoll" event method
+2023/03/25 22:49:51 [notice] 1#1: nginx/1.22.1
+2023/03/25 22:49:51 [notice] 1#1: built by gcc 11.2.1 20220219 (Alpine 11.2.1_git20220219) 
+2023/03/25 22:49:51 [notice] 1#1: OS: Linux 5.15.90.1-microsoft-standard-WSL2
+2023/03/25 22:49:51 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/03/25 22:49:51 [notice] 1#1: start worker processes
+2023/03/25 22:49:51 [notice] 1#1: start worker process 29
+2023/03/25 22:49:51 [notice] 1#1: start worker process 30
+2023/03/25 22:49:51 [notice] 1#1: start worker process 31
+2023/03/25 22:49:51 [notice] 1#1: start worker process 32
+2023/03/25 22:49:51 [notice] 1#1: start worker process 33
+2023/03/25 22:49:51 [notice] 1#1: start worker process 34
+2023/03/25 22:49:51 [notice] 1#1: start worker process 35
+2023/03/25 22:49:51 [notice] 1#1: start worker process 36
+2023/03/25 22:52:34 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/03/25 22:52:34 [notice] 31#31: gracefully shutting down
+2023/03/25 22:52:34 [notice] 30#30: gracefully shutting down
+2023/03/25 22:52:34 [notice] 35#35: gracefully shutting down
+2023/03/25 22:52:34 [notice] 30#30: exiting
+2023/03/25 22:52:34 [notice] 31#31: exiting
+2023/03/25 22:52:34 [notice] 35#35: exiting
+2023/03/25 22:52:34 [notice] 34#34: gracefully shutting down
+2023/03/25 22:52:34 [notice] 34#34: exiting
+2023/03/25 22:52:34 [notice] 35#35: exit
+2023/03/25 22:52:34 [notice] 30#30: exit
+2023/03/25 22:52:34 [notice] 34#34: exit
+2023/03/25 22:52:34 [notice] 29#29: gracefully shutting down
+2023/03/25 22:52:34 [notice] 31#31: exit
+2023/03/25 22:52:34 [notice] 29#29: exiting
+2023/03/25 22:52:34 [notice] 29#29: exit
+2023/03/25 22:52:34 [notice] 33#33: gracefully shutting down
+2023/03/25 22:52:34 [notice] 33#33: exiting
+2023/03/25 22:52:34 [notice] 36#36: gracefully shutting down
+2023/03/25 22:52:34 [notice] 36#36: exiting
+2023/03/25 22:52:34 [notice] 33#33: exit
+2023/03/25 22:52:34 [notice] 32#32: gracefully shutting down
+2023/03/25 22:52:34 [notice] 32#32: exiting
+2023/03/25 22:52:34 [notice] 36#36: exit
+2023/03/25 22:52:34 [notice] 32#32: exit
+2023/03/25 22:52:34 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2023/03/25 22:52:34 [notice] 1#1: worker process 34 exited with code 0
+2023/03/25 22:52:34 [notice] 1#1: signal 29 (SIGIO) received
+2023/03/25 22:52:34 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2023/03/25 22:52:34 [notice] 1#1: worker process 29 exited with code 0
+2023/03/25 22:52:34 [notice] 1#1: worker process 33 exited with code 0
+2023/03/25 22:52:34 [notice] 1#1: signal 29 (SIGIO) received
+2023/03/25 22:52:34 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2023/03/25 22:52:34 [notice] 1#1: worker process 30 exited with code 0
+2023/03/25 22:52:34 [notice] 1#1: worker process 32 exited with code 0
+2023/03/25 22:52:34 [notice] 1#1: worker process 35 exited with code 0
+2023/03/25 22:52:34 [notice] 1#1: worker process 36 exited with code 0
+2023/03/25 22:52:34 [notice] 1#1: signal 29 (SIGIO) received
+2023/03/25 22:52:34 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2023/03/25 22:52:34 [notice] 1#1: worker process 31 exited with code 0
+2023/03/25 22:52:34 [notice] 1#1: exit
+2023/03/25 22:52:52 [notice] 1#1: using the "epoll" event method
+2023/03/25 22:52:52 [notice] 1#1: nginx/1.22.1
+2023/03/25 22:52:52 [notice] 1#1: built by gcc 11.2.1 20220219 (Alpine 11.2.1_git20220219) 
+2023/03/25 22:52:52 [notice] 1#1: OS: Linux 5.15.90.1-microsoft-standard-WSL2
+2023/03/25 22:52:52 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/03/25 22:52:52 [notice] 1#1: start worker processes
+2023/03/25 22:52:52 [notice] 1#1: start worker process 29
+2023/03/25 22:52:52 [notice] 1#1: start worker process 30
+2023/03/25 22:52:52 [notice] 1#1: start worker process 31
+2023/03/25 22:52:52 [notice] 1#1: start worker process 32
+2023/03/25 22:52:52 [notice] 1#1: start worker process 33
+2023/03/25 22:52:52 [notice] 1#1: start worker process 34
+2023/03/25 22:52:52 [notice] 1#1: start worker process 35
+2023/03/25 22:52:52 [notice] 1#1: start worker process 36
+2023/03/25 22:53:17 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/03/25 22:53:17 [notice] 29#29: gracefully shutting down
+2023/03/25 22:53:17 [notice] 30#30: gracefully shutting down
+2023/03/25 22:53:17 [notice] 32#32: gracefully shutting down
+2023/03/25 22:53:17 [notice] 36#36: gracefully shutting down
+2023/03/25 22:53:17 [notice] 31#31: gracefully shutting down
+2023/03/25 22:53:17 [notice] 36#36: exiting
+2023/03/25 22:53:17 [notice] 32#32: exiting
+2023/03/25 22:53:17 [notice] 31#31: exiting
+2023/03/25 22:53:17 [notice] 35#35: gracefully shutting down
+2023/03/25 22:53:17 [notice] 29#29: exiting
+2023/03/25 22:53:17 [notice] 35#35: exiting
+2023/03/25 22:53:17 [notice] 36#36: exit
+2023/03/25 22:53:17 [notice] 32#32: exit
+2023/03/25 22:53:17 [notice] 31#31: exit
+2023/03/25 22:53:17 [notice] 29#29: exit
+2023/03/25 22:53:17 [notice] 35#35: exit
+2023/03/25 22:53:17 [notice] 34#34: gracefully shutting down
+2023/03/25 22:53:17 [notice] 34#34: exiting
+2023/03/25 22:53:17 [notice] 33#33: gracefully shutting down
+2023/03/25 22:53:17 [notice] 33#33: exiting
+2023/03/25 22:53:17 [notice] 34#34: exit
+2023/03/25 22:53:17 [notice] 33#33: exit
+2023/03/25 22:53:17 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2023/03/25 22:53:17 [notice] 1#1: worker process 29 exited with code 0
+2023/03/25 22:53:17 [notice] 1#1: signal 29 (SIGIO) received
+2023/03/25 22:53:18 [notice] 1#1: signal 17 (SIGCHLD) received from 36
+2023/03/25 22:53:18 [notice] 1#1: worker process 32 exited with code 0
+2023/03/25 22:53:18 [notice] 1#1: worker process 36 exited with code 0
+2023/03/25 22:53:18 [notice] 1#1: signal 29 (SIGIO) received
+2023/03/25 22:53:18 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2023/03/25 22:53:18 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2023/03/25 22:53:18 [notice] 1#1: worker process 33 exited with code 0
+2023/03/25 22:53:18 [notice] 1#1: worker process 35 exited with code 0
+2023/03/25 22:53:18 [notice] 1#1: signal 29 (SIGIO) received
+2023/03/25 22:53:18 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2023/03/25 22:53:18 [notice] 1#1: worker process 31 exited with code 0
+2023/03/25 22:53:18 [notice] 1#1: worker process 34 exited with code 0
+2023/03/25 22:53:18 [notice] 1#1: signal 29 (SIGIO) received
+2023/03/25 22:54:11 [notice] 1#1: using the "epoll" event method
+2023/03/25 22:54:11 [notice] 1#1: nginx/1.22.1
+2023/03/25 22:54:11 [notice] 1#1: built by gcc 11.2.1 20220219 (Alpine 11.2.1_git20220219) 
+2023/03/25 22:54:11 [notice] 1#1: OS: Linux 5.15.90.1-microsoft-standard-WSL2
+2023/03/25 22:54:11 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/03/25 22:54:11 [notice] 1#1: start worker processes
+2023/03/25 22:54:11 [notice] 1#1: start worker process 29
+2023/03/25 22:54:11 [notice] 1#1: start worker process 30
+2023/03/25 22:54:11 [notice] 1#1: start worker process 31
+2023/03/25 22:54:11 [notice] 1#1: start worker process 32
+2023/03/25 22:54:11 [notice] 1#1: start worker process 33
+2023/03/25 22:54:11 [notice] 1#1: start worker process 34
+2023/03/25 22:54:11 [notice] 1#1: start worker process 35
+2023/03/25 22:54:11 [notice] 1#1: start worker process 36
