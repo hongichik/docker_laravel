@@ -20,6 +20,7 @@
         - `php.ini`: chứa cấu hình PHP
     - `.env`: chứa cấu hình cơ sở dữ liệu MySQL và tên dự án
 ## truy cập vào thư mục wsl
+- cho `\\wsl$` vào đường dẫn thư mục
 >\\wsl$
 ## Cấu hình cơ bản
 
